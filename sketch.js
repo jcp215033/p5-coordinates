@@ -30,10 +30,22 @@ function draw() {
   ellipse(mouseX, mouseY, 10, 10);
 
   textSize(18);
-  text(`(${mouseX}, ${mouseY})`, mouseX + 55, mouseY + 45);
+  text(
+    `(${parseInt(mouseX)}, ${parseInt(mouseY)})`,
+    parseInt(mouseX) + 55,
+    parseInt(mouseY) + 45
+  );
 
-  text(`y: ${mouseY} px`, mouseX + 55, mouseY + 15);
-  text(`x: ${mouseX} px`, mouseX + 55, mouseY - 10);
+  text(
+    `y: ${parseInt(mouseY)} px`,
+    parseInt(mouseX) + 55,
+    parseInt(mouseY) + 15
+  );
+  text(
+    `x: ${parseInt(mouseX)} px`,
+    parseInt(mouseX) + 55,
+    parseInt(mouseY) - 10
+  );
 
   textSize(24);
   fill(100);
